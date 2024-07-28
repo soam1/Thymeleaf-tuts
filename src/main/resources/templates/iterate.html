@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeLeaf.org">
+<head >
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Iterate</h1>
+	<h2> This is iterate page</h2>
+	
+	<div th:each="name, status : ${names}">
+		<h1 th:text="${name}"></h1>
+		<!-- 
+		<h1 th:text="${status.index}"></h1>
+		<h1 th:text="${status.count}"></h1>
+		<h1 th:text="${status.size}"></h1>
+		<h1 th:text="${status.current}"></h1>
+		<h1 th:text="${status.first}"></h1>
+		<h1 th:text="${status.last}"></h1>
+		<h1 th:text="${status.even}"></h1>
+		<h1 th:text="${status.odd}"></h1>
+		 -->
+		</div>
+</body>
+</html>
