@@ -42,4 +42,11 @@ public class MyController {
         model.addAttribute("name", "Akash");
         return "condition";
 	}
+	
+//	handler for including fragments 
+	@GetMapping("/service")
+	public String servicesHandler(Model model) {
+		System.out.println("inside services handler");
+		return "service";
+	}
 }
