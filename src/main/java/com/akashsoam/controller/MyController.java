@@ -46,7 +46,10 @@ public class MyController {
 //	handler for including fragments 
 	@GetMapping("/service")
 	public String servicesHandler(Model model) {
+	
 		System.out.println("inside services handler");
+		model.addAttribute("title", "this is service page title");
+		model.addAttribute("subtitle", "this is subtitle of service page");
 		return "service";
 	}
 }

@@ -10,9 +10,14 @@
 <h2> This is service page</h2>
 
 <!--  going to bring footer here -->
-<footer th:replace="footer::footer1"></footer>
+<!--<footer th:replace="footer::footer1('This is title', 'This is subtitle')"></footer>
+  -->
+
+<footer th:replace="footer::footer1(${title}, ${subtitle})"></footer>
+<!-- 
 <footer th:insert="footer::footer1"></footer>
 <footer th:include="footer::footer1"></footer>
+-->
 
 </body>
 </html>
