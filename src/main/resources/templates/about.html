@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8" >
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>About</h1>
+<h2> This is about page</h2>
+<h1 th:text = "${#strings.toUpperCase(name)}"></h1>
+<h3> The name of the owner </h3>
+<h3> today's date is<span th:text = "${currentDate}"></span></h3>
+
+<div th:with= "a = 9, b = 10, name = ${name}">
+<h1 th:text = "'my name is '	+${name}"></h1>
+<h1 th:text = "${a + b}"></h1>
+</div>
+</body>
+</html>
