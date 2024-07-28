@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeLeaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Conditional statements</h1>
+	<h2> This is conditional statements page</h2>
+	<!--  elvis operator-->
+	<h1 th:text="${isActive}? 'Hi Akash' :'Hi guest' "></h1>
+	<div th:unless="${name} == 'Rahul'">
+		<h1>Hi Guest</h1>
+	</div>
+	
+	<div th:switch="${name}"><p th:case="'Akash'">Hi Akash soam</p>
+	<p th:case="'Raj'">Hi Raj</p>
+	<p th:case="'Ravi'">Hi Ravi</p>
+	<p th:case="*">Hi Guest</p>
+	</div>
+
+</body>
+</html>

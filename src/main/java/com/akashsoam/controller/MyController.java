@@ -31,4 +31,15 @@ public class MyController {
 		model.addAttribute("names", names);
 		return "iterate";
 	}
+	
+	//handling condition in thymeleaf
+	@GetMapping("/condition")
+	public String condition(Model model) {
+        System.out.println("inside condition handler");
+
+        model.addAttribute("isActive", true);
+        model.addAttribute("isActive1", false);
+        model.addAttribute("name", "Akash");
+        return "condition";
+	}
 }
