@@ -52,4 +52,9 @@ public class MyController {
 		model.addAttribute("subtitle", "this is subtitle of service page");
 		return "service";
 	}
+	//for new about
+	@GetMapping("/newabout")
+	public String newAbout() {
+		return "aboutnew";
+	}
 }
